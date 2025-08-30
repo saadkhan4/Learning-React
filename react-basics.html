@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>React Basics</title>
+</head>
+
+<body>
+    <div class="js-container"></div>
+
+    <!-- Loads external library for react -->
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <!-- external library for babel -->
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <!-- this attribute tells babel to translate all the code into normal JS. -->
+    <script type="text/babel">
+
+        // JSX code for making button and shortcut for JS.
+        const button = <button>Good job!</button>;
+
+        // Using DOM to make button.
+        // const button = document.createElement("button");
+        // button.innerHTML = "hello";
+
+        // setup and uses the react
+        const container = document.querySelector('.js-container');
+        ReactDOM.createRoot(container).render(button);
+    </script>
+</body>
+
+</html> 
