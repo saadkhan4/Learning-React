@@ -19,15 +19,39 @@
         function ChatInput() {
             return (
                 <>
-                    <input placeholder = "Send a message to Chatbot AI" size = "35"/>
+                    <input placeholder="Send a message to Chatbot AI" size="35" />
                     <button>Send</button>
                 </>
             );
         }
 
+        function ChatMessage(props) {
+            const message = props.message;
+            const sender = props.sender;
+
+            if (sender === "robot") {
+                return (
+                    <div>
+                        <img src="chatbot.png" width="50" />
+                        {message}
+                    </div>
+                )
+            }
+
+            return (
+                <div>
+                    {message}
+                    <img src="user.png" width="50" />
+                </div>
+            );
+        }
+        
         const app = (
             <>
                 <ChatInput></ChatInput>
+                <ChatMessage message="hello Chatbot" sender="user"></ChatMessage>
+                <ChatMessage message="Hello! what can I do for you?" sender="robot" />
+
             </>
         );
 
