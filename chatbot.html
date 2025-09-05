@@ -40,17 +40,22 @@
 
             return (
                 <div>
+                    {/* props.message ki value show krne k liye */}
                     {message}
                     <img src="user.png" width="50" />
                 </div>
             );
         }
-        
+
         const app = (
             <>
                 <ChatInput></ChatInput>
-                <ChatMessage message="hello Chatbot" sender="user"></ChatMessage>
+                <ChatMessage message="Hello Chatbot" sender="user"></ChatMessage>
                 <ChatMessage message="Hello! what can I do for you?" sender="robot" />
+                <ChatMessage message= "When is the Apple event?" sender="user" />
+                <ChatMessage message= "It will be held on September 9th at 10:00PM PST" sender="robot" />
+                <ChatMessage message="Are they changing the design of Pro models?" sender="user" />
+                <ChatMessage message="Lots of images has been leaked, looks like it's going to change." sender="robot" />
 
             </>
         );
