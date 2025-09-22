@@ -1,0 +1,9 @@
+.card-container{
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: blue;
+    margin-top: 50px;
+    padding: 40px 20px 40px 20px;
+    width: 20%;
+
+}
