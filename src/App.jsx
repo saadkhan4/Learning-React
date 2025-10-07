@@ -1,12 +1,9 @@
-// import { useState } from "react";
+// import { useRef } from "react";
+// import Practice from "./components/Practice";
 
 import { useRef } from "react";
 
-// import { useState } from "react";
-
-// import { useState } from "react";
-
-// import { useState } from "react";
+// import Practice from "./components/Practice";
 
 // const Counter = () => {
 //   const [count, setCount] = useState(0);
@@ -324,18 +321,229 @@ import { useRef } from "react";
 //       <button onClick={() => setCount(count + 1)}>Increase</button>
 //     </>
 //   );
+//   };
+
+//   export default Counter;
+
+// STYLING AND CONTROLING INPUT FIELD WITH useRef.
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleClick = () => {
+//     inputRef.current.value = "Hey there!";
+//     inputRef.current.style.backgroundColor = "yellow";
+//   };
+
+//   const inputHandler = () => {
+//     inputRef.current.focus();
+//   };
+//   return (
+//     <>
+//       <input type="text" placeholder="Enter your text" ref={inputRef} />
+//       <button onClick={handleClick}>Control Input</button>
+//       <button onClick={inputHandler}>Focus on input field</button>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+
+//   useEffect(() => {
+//     console.log("Count",count);
+//   },[count])
+
+//   return (
+//     <>
+//       <h2>Counter : {count}</h2>
+//       <button onClick={()=>setCount(count + 1)}>Increase</button>
+//     </>
+//   )
+
+// }
+
+// export default Counter;
+
+// const App = () => {
+//   const [text, setText] = useState("");
+
+//   const handleChange = (event) => {
+//     setText(event.target.value);
+//   };
+
+//   return (
+//     <>
+//       <h2>onChange Example</h2>
+//       <input
+//         type="text"
+//         placeholder="Enter your text"
+//         onChange={handleChange}
+//       />
+//       <p>You typed : {text}</p>
+//     </>
+//   );
+// };
+
+// const App = () => {
+//   const bikes = ["BMW", "Honda", "Yamaha", "Suzuki", "Harley Davidson"];
+//   return (
+//     <>
+//       <h2>List of bikes companies</h2>
+//       <ul>
+//         {bikes.map((bikes,index) => (
+//           <li key={index}>{bikes}</li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+//   const prevCount = useRef(null);
+
+//   useEffect(() => {
+//     prevCount.current = count;
+//   }, [count]);
+
+//   return (
+//     <>
+//       <h2>Counter : {count}</h2>
+//       <h2>Previous Count : {prevCount.current}</h2>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//     </>
+//   );
+// };
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleClick = () => {
+//     inputRef.current.value = "Hey There !";
+//     inputRef.current.style.backgroundColor = "Pink";
+//   };
+
+//   const inputHandler = () => {
+//     inputRef.current.focus();
+//   };
+
+//   return (
+//     <>
+//       <input type="text" placeholder="Enter your text" ref={inputRef} />
+//       <button onClick={handleClick}>Control Input</button>
+//       <button onClick={inputHandler}>Focus on input</button>
+//     </>
+//   );
+// };
+
+// const App = () => {
+//   const [text, setText] = useState("");
+//   const handleChange = (event) => {
+//     setText(event.target.value);
+//   };
+//   return (
+//     <>
+//       <h2>onChange Example</h2>
+//       <input type="text" placeholder="Enter your text" onChange={handleChange} />
+//       <p>You typed : {text}</p>
+//     </>
+//   );
+// };
+
+// const App = () => {
+//   const drinks = ["RedBull", "Coke", "Pepsi", "Monster Energy"];
+//   return (
+//     <>
+//       <h2>List of drinks companies</h2>
+//       <ul>
+//         {drinks.map((drinks, index) => (
+//           <li key={index}>{drinks}</li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+// };
+
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+//   const prevCount = useRef(null);
+
+//   useEffect(() => {
+//     prevCount.current = count;
+//   },[count])
+//   return (
+//     <>
+//       <h2>Count : {count}</h2>
+//       <h2>Previous Count : {prevCount.current}</h2>
+//       <button onClick={()=>setCount(count + 1)}>Increase</button>
+//     </>
+//   );
 // };
 
 // export default Counter;
 
-// STYLING AND CONTROLING INPUT FIELD WITH useRef.
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleClick = () => {
+//     inputRef.current.value = "Hey there boi";
+//     inputRef.current.style.backgroundColor = "Orange";
+//   };
+//   const inputHandler = () => {
+//     inputRef.current.focus();
+//   };
+//   return (
+//     <>
+//       <h2>useRef Example</h2>
+//       <input type="text" placeholder="Enter your text" ref={inputRef} />
+//       <button onClick={handleClick}>Click me</button>
+//       <button onClick={inputHandler}>focus on input field</button>
+//     </>
+//   );
+// };
+
+// const App = () => {
+//   const cars = ["Audi", "Honda", "Toyota", "Mitsubishi Motors", "Ferrari"];
+//   return (
+//     <>
+//       <h2>List of cars Companies</h2>
+//           <ul>
+//               {cars.map((cars,index) => (
+//                   <li key={index}>{cars}</li>
+//               ))}
+//       </ul>
+//     </>
+//   );
+// };
+
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+//   const prevCount = useRef(null);
+
+//   useEffect(() => {
+//     prevCount.current = count;
+//   }, [count]);
+//   return (
+//     <>
+//       <h2>Count : {count}</h2>
+//       <h2>Previous Count : {prevCount.current}</h2>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//       <button onClick={() => setCount(0)}>Reset</button>
+//     </>
+//   );
+// };
 
 const App = () => {
   const inputRef = useRef(null);
 
   const handleClick = () => {
-    inputRef.current.value = "Hey there!";
-    inputRef.current.style.backgroundColor = "yellow";
+    inputRef.current.value = "Hey there mate.";
+    inputRef.current.style.backgroundColor = "Pink";
   };
 
   const inputHandler = () => {
@@ -343,9 +551,10 @@ const App = () => {
   };
   return (
     <>
-      <input type="text" placeholder="Enter your text" ref={inputRef} />
-      <button onClick={handleClick}>Control Input</button>
-      <button onClick={inputHandler}>Focus on input field</button>
+      <h2>useRef Example</h2>
+      <input type="text" placeholder="Enter Your Text" ref={inputRef} />
+      <button onClick={handleClick}>Click me</button>
+      <button onClick={inputHandler}>Focus on input</button>
     </>
   );
 };
