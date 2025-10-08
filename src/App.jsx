@@ -1,16 +1,19 @@
 import React, { useState } from "react";
-import AddUser from "./Adduser";
-import DisplayUser from "./DisplayUser";
+import Practice from "./Practice";
 
 const App = () => {
-    const [user, setUser] = useState("");
-    return (
-        <div>
-            {/*  */}
-            <AddUser setUser={setUser} />
-            <DisplayUser user={user}/>
-        </div>
-    )
-}
+  const [name, setName] = useState("");  // will save the value here
+
+  const handleChange = (event) => {
+    setName(event.target.value);  // jb child main input change hoga.
+  };
+  return (
+    <>
+      <h1>Lifting State Example</h1>
+          <Practice name={name} handleChange={handleChange}/>
+          <h2>Your name : {name}</h2>
+    </>
+  );
+};
 
 export default App;
