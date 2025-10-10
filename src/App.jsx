@@ -1,9 +1,9 @@
 // import { useRef } from "react";
 // import Practice from "./components/Practice";
+// import {useRef} from "react";
 
-import { useRef } from "react";
-
-// import Practice from "./components/Practice";
+// import { useRef } from "react";
+import Practice from "./components/Practice";
 
 // const Counter = () => {
 //   const [count, setCount] = useState(0);
@@ -538,25 +538,112 @@ import { useRef } from "react";
 //   );
 // };
 
-const App = () => {
-  const inputRef = useRef(null);
+// const App = () => {
+//   const inputRef = useRef(null);
 
-  const handleClick = () => {
-    inputRef.current.value = "Hey there mate.";
-    inputRef.current.style.backgroundColor = "Pink";
-  };
+//   const handleClick = () => {
+//     inputRef.current.value = "Hey there mate.";
+//     inputRef.current.style.backgroundColor = "Pink";
+//   };
 
-  const inputHandler = () => {
-    inputRef.current.focus();
-  };
-  return (
-    <>
-      <h2>useRef Example</h2>
-      <input type="text" placeholder="Enter Your Text" ref={inputRef} />
-      <button onClick={handleClick}>Click me</button>
-      <button onClick={inputHandler}>Focus on input</button>
-    </>
-  );
-};
+//   const inputHandler = () => {
+//     inputRef.current.focus();
+//   };
+//   return (
+//     <>
+//       <h2>useRef Example</h2>
+//       <input type="text" placeholder="Enter Your Text" ref={inputRef} />
+//       <button onClick={handleClick}>Click me</button>
+//       <button onClick={inputHandler}>Focus on input</button>
+//     </>
+//   );
+// };
 
-export default App;
+// Controlled Component
+
+// const App = () => {
+//   const [name, setName] = useState("");
+//   return (
+//     <>
+//       <input
+//         type="text"
+//         placeholder="Enter Your Name"
+//         value={name}
+//         onChange={(event) => setName(event.target.value)}
+//       />
+//       <p>Your name : {name}</p>
+//     </>
+//   );
+// };
+
+// UNCONTROLLED COMPONENT
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleClick = () => {
+//     alert(`Your name : ${inputRef.current.value}`)
+//   }
+
+//   return (
+//     <>
+//       <h2>Uncontrolled component</h2>
+//       <input type="text" placeholder="Enter you name" ref={inputRef} />
+//       <button onClick={handleClick}>Click me!</button>
+//     </>
+//   )
+// }
+
+// const App = () => {
+//   const cars = ["BMW", "Audi", "Honda", "Benz", "Ferrari"];
+
+//   return (
+//     <>
+//       <h2>List of cars companies</h2>
+//       <ul>
+//         {cars.map((cars, index) => (
+//           <li key={index}>{cars}</li>
+//         ))}
+//       </ul>
+//     </>
+//   );
+// };
+
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+//   const prevCount = useRef(null)
+
+//   useEffect(() => {
+//     prevCount.current = count;
+//   },[count])
+//   return (
+//     <>
+//       <h2>Count : {count}</h2>
+//       <h2>Previous Count : {prevCount.current}</h2>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//     </>
+//   )
+// }
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleClick = () => {
+//     inputRef.current.value = "Hey there.";
+//     inputRef.current.style.backgroundColor = "Aqua";
+//   };
+
+//   const inputHandler = () => {
+//     inputRef.current.focus();
+//   };
+//   return (
+//     <>
+//       <h2>useRef Example</h2>
+//       <input type="text" placeholder="Enter your text" ref={inputRef} />
+//       <button onClick={handleClick}>Click me</button>
+//       <button onClick={inputHandler}>focus on input handler</button>
+//     </>
+//   );
+// };
+
+// export default App;
