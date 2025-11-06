@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Child from "./Child";
-
-const Parent = () => {
+const App = () => {
     const [name, setName] = useState("");
 
     const handleChange = (event) => {
@@ -9,11 +8,11 @@ const Parent = () => {
     }
     return (
         <>
-            <h1>Lifting State example</h1>
-            <Child name={name} handleChange={handleChange} />
-            <p>Your name : {name}</p>
+            <h2>Lifting State Example</h2>
+            <Child name={name} handleChange={handleChange}/>
+            <p>name : {name}</p>
         </>
     )
 }
 
-export default Parent;
+export default App;
