@@ -1,11 +1,12 @@
-// import { useRef, useState } from "react";
+import {  useRef} from "react";
 // import Practice from "./components/Practice";
-import { useRef } from "react";
+// import { useRef, useState } from "react";
 // import { useEffect, useRef, useState } from "react";
 // import { useEffect, useRef, useState } from "react";
 // import { useEffect, useRef, useState } from "react";
 // import { useEffect, useRef, useState } from "react";
-import Practice from "./components/Practice";
+
+// import Practice from "./components/Practice";
 
 // const Counter = () => {
 //   const [count, setCount] = useState(0);
@@ -1060,24 +1061,326 @@ import Practice from "./components/Practice";
 
 // export default App;
 
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleClick = () => {
+//     inputRef.current.value = "Hey there.";
+//     inputRef.current.style.backgroundColor = "Yellow";
+//   };
+
+//   const handleInput = () => {
+//     inputRef.current.focus();
+//   };
+//   return (
+//     <>
+//       <input type="text" placeholder="Enter your name" ref={inputRef} />
+//       <button onClick={handleClick}>Click me</button>
+//       <button onClick={handleInput}>Focus on input field</button>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const App = () => {
+//   const [name, setName] = useState("");
+//   return (
+//     <>
+//       <input type="text" placeholder="What's your name?" value={name} onChange={(event)=> setName(event.target.value)} />
+//       <p>name : {name}</p>
+//     </>
+//   )
+// }
+
+// export default App;
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleName = () => {
+//     alert(`Your name is ${inputRef.current.value}`);
+//   };
+//   return (
+//     <>
+//       <input type="text" placeholder="What's your name?" ref={inputRef} />
+//       <button onClick={handleName}>Click me</button>
+//     </>
+//   );
+// };
+
+// const App = () => {
+//     const cars = ["BMW", "Audi", "Skoda", "Benz"];
+//     return (
+//         <>
+//             <h1>List of cars companies</h1>
+//             <ul>
+//                 {cars.map((cars) => (
+//                     <li key={cars}>{cars}</li>
+//                 ))}
+//             </ul>
+//         </>
+//     )
+// }
+
+// export default App;
+
+// const App = () => {
+//     return (
+//         <Practice name={"Hamza"} />
+//     )
+// }
+
+// export default App;
+
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+//   const prevCount = useRef(null);
+
+//   useEffect(() => {
+//     prevCount.current = count;
+//   }, [count]);
+//   return (
+//     <>
+//       <h1>count : {count}</h1>
+//       <h1>Previous Count : {prevCount.current}</h1>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//     </>
+//   );
+// };
+// export default Counter;
+
+// const App = () => {
+//   const [name, setName] = useState("");
+
+//   return (
+//     <>
+//       <input
+//         type="text"
+//         placeholder="Enter your name"
+//         value={name}
+//         onChange={(event)=> setName(event.target.value)}
+//       />
+//       <p>name : {name}</p>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleName = () => {
+//     alert(`Your name is ${inputRef.current.value}`);
+//   };
+//   return (
+//     <>
+//       <input type="text" placeholder="Enter Your Name" ref={inputRef} />
+//       <button onClick={handleName}>Click ME</button>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const App = () => {
+//   const [name, setName] = useState("");
+//   return (
+//     <>
+//       <input
+//         type="text"
+//         placeholder="Enter your name"
+//         value={name}
+//         onChange={(event) => setName(event.target.value)}
+//       />
+//       <p>name : {name}</p>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+//   const prevCount = useRef(null);
+
+//   useEffect(() => {
+//     prevCount.current = count;
+//   }, [count]);
+//   return (
+//     <>
+//       <h1>Count : {count}</h1>
+//       <h1>Previous Count : {prevCount.current}</h1>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//     </>
+//   );
+// };
+
+// export default Counter;
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleName = () => {
+//     alert(`Your name is ${inputRef.current.value}`);
+//   };
+
+//   return (
+//     <>
+//       <input type="text" placeholder="Enter Your Name" ref={inputRef} />
+//       <button onClick={handleName}>Click ME</button>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleInput = () => {
+//     inputRef.current.value = "Hey There.";
+//     inputRef.current.style.backgroundColor = "Orange";
+//   };
+
+//   const handleFocus = () => {
+//     inputRef.current.focus();
+//   };
+//   return (
+//     <>
+//       <input type="text" placeholder="Enter your name" ref={inputRef} />
+//       <button onClick={handleInput}>Click Me</button>
+//       <button onClick={handleFocus}>Click on focus for input field</button>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const App = () => {
+//   const [number, setNumber] = useState(0);
+
+//   const double = useMemo(() => {
+//     console.log("Calculating...");
+//     return number * 2;
+//   }, [number]);
+//   return (
+//     <>
+//       <h2>Number : {number}</h2>
+//       <h2>Double : {double}</h2>
+//       <button onClick={() => setNumber(number + 1)}>Increase</button>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const App = () => {
+//   const [number, setNumber] = useState(0);
+
+//   const double = useMemo(() => {
+//     console.log("Calculating...");
+//     return number * 2;
+//   }, [number]);
+//   return (
+//     <>
+//       <h2>Number : {number}</h2>
+//       <h2>Double : {double}</h2>
+//       <button onClick={() => setNumber(number + 1)}>Increase</button>
+//     </>
+//   );
+// };
+// export default App;
+
+// const Counter = () => {
+//   const [count, setCount] = useState(0);
+//   const prevCount = useRef(null);
+
+//   useEffect(() => {
+//     prevCount.current = count;
+//   }, [count]);
+//   return (
+//     <>
+//       <h2>count : {count}</h2>
+//       <h2>Previous Count : {prevCount.current}</h2>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//     </>
+//   );
+// };
+
+// export default Counter;
+
+// const Count = () => {
+//   const [count, setCount] = useState(0)
+//   const prevCount = useRef(null);
+
+//   useEffect(() => {
+//     prevCount.current = count;
+//   });
+//   return (
+//     <>
+//       <h2>Count : {count}</h2>
+//       <h2>Previous Count : {prevCount.current}</h2>
+//       <button onClick={() => setCount(count + 1)}>Increase</button>
+//     </>
+//   );
+// };
+
+// export default Count;
+
+// const App = () => {
+//   const inputRef = useRef(null);
+
+//   const handleInput = () => {
+//     inputRef.current.value = "Hey There";
+//     inputRef.current.style.backgroundColor = "yellow";
+//   };
+
+//   const handleFocus = () => {
+//     inputRef.current.focus();
+//   };
+//   return (
+//     <>
+//           <input type="text" placeholder="Enter your name" ref={inputRef} />
+//           <button onClick={handleInput}>Click me</button>
+//           <button onClick={handleFocus}>Focus on input</button>
+//     </>
+//   );
+// };
+
+// export default App;
+
+// const App = () => {
+//   const [name, setName] = useState("");
+//   return (
+//     <>
+//       <input
+//         type="text"
+//         placeholder="Enter your name"
+//         value={name}
+//         onChange={(event) => setName(event.target.value)}
+//           />
+//           <p>your name : {name}</p>
+//     </>
+//   );
+// };
+
+// export default App;
+
+
 const App = () => {
-  const inputRef = useRef(null);
+    const inputRef = useRef(null);
 
-  const handleClick = () => {
-    inputRef.current.value = "Hey there.";
-    inputRef.current.style.backgroundColor = "Yellow";
-  };
-
-  const handleInput = () => {
-    inputRef.current.focus();
-  };
-  return (
-    <>
-      <input type="text" placeholder="Enter your name" ref={inputRef} />
-      <button onClick={handleClick}>Click me</button>
-      <button onClick={handleInput}>Focus on input field</button>
-    </>
-  );
-};
+    const handleName = () => {
+        alert(`Your name : ${inputRef.current.value}`);
+    }
+    return (
+        <>
+            <input type="text" placeholder="Enter your name" ref={inputRef} />
+            <button onClick={handleName}>Click me.</button>
+        </>
+    )
+}
 
 export default App;

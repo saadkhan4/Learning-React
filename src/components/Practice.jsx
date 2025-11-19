@@ -1,20 +1,14 @@
-import React, { useState } from "react";
+// import React, { useEffect, useRef, useState } from "react";
+import App from "../App";
+// import { useRedf } from "react";
 
-// CONTROLLED COMPONENT
+// const Practice = ({name}) => {
+//   return(
+//     <>
+//       <h1>{name}</h1>
+//     </>
+//   )
+// }
 
-const Control = () => {
-  const [name, setName] = useState("");
-  return (
-    <>
-      <input
-        type="text"
-        placeholder="Enter Your Name"
-        value={name}
-        onChange={(event) => setName(event.target.value)}
-      />
-      <p>Your name : {name}</p>
-    </>
-  );
-};
+// export default Practice;
 
-export default Control;
